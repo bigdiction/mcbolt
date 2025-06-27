@@ -1,0 +1,111 @@
+/* CSS files add styling rules to your content */
+
+
+body {
+  font-family: helvetica, arial, comic-sans, sans-serif;
+  margin: 2em;
+  background: #454545;
+}
+
+h1 {
+  font-style: italic;
+  font-style: bold;
+  color: #FFFFFF;
+}
+
+p2 {
+  font-family: arial, helvetica, sans-serif;
+  font-style: bold;
+  color: #000000;
+}
+
+/* navigation styling */
+
+{
+  box-sizing: border-box;
+}
+
+column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* begin recs <div> style */ 
+.recs {
+  height:100%;
+  width:100%;
+  max-width:800px;
+}
+
+/* links */ 
+
+a {
+  color: #FFFFFF;
+}
+a:visited {
+  color: #8A2BE2
+}
+
+/* embed */ 
+.divqus { 
+  max-width: 800px;
+  margin: auto;
+}
+
+/* center page content */ 
+
+.content {
+  margin: auto;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: bold, italic;
+  color: #000000;
+}
+
+/* image will not center without margin: auto */ 
+img {
+  max-width: 60%;
+  margin: auto;
+  max-width: 800px;
+}
+
+.imgcenter {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  img {
+    width: 100%;
+  }
+}
+/* comment count talk bubble */ 
+.talk-bubble {
+   width: 160px;
+      height: 40px;
+      background: white;
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+}
+.disqus-comment-count {
+  color: black;
+  font-style: bold;
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+}
+.no-change a, a:visited {
+  color: inherit;
+}
+/*custom color for disqus_thread linked elements */
+.disqus_thread a { 
+
+color: #FFC0CB; 
+
+} 
