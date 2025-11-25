@@ -1,5 +1,10 @@
-UPDATE JUNE 2025: MCBOLT will be moving to GitHub Pages: https://bigdiction.github.io/mcbolt/ 
+McBolt 2020 - A simple website for cats and other content, come leave a comment!
 
-Seeing it this builds with .nojekyll file
+UPDATE JUNE 2025: MCBOLT moved to GitHub Pages. Subscribe for more updates. 
 
-Subscribe for more updates. 
+### ← index.html Homepage 
+
+### ← style.css, style-dark.css
+
+### ← assets [migrate hosting by 2025-12-31]
+
