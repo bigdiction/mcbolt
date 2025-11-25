@@ -6,7 +6,5 @@ UPDATE JUNE 2025: MCBOLT moved to GitHub Pages. Subscribe for more updates.
 
 ### ← style.css, style-dark.css
 
-CSS files add styling rules to your content.
-
-### ← assets [migrate hosting by 2025-12-31
+### ← assets [migrate hosting by 2025-12-31]
 
