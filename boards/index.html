@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcBolt Boards</title>
+    <script>
+        // Restore deep paths handed off by /404.html before any other
+        // script runs. If the URL looks like /automatic-winner/forums/?/<rest>,
+        // rewrite the address bar to /automatic-winner/forums/<rest> so the
+        // boards history router sees the canonical URL on first paint.
+        //
+        // Adapted from https://github.com/rafgraph/spa-github-pages.
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search
+                    .slice(1)
+                    .split('&')
+                    .map(function (s) { return s.replace(/~and~/g, '&'); })
+                    .join('?');
+                window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+            }
+        })(window.location);
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #1a1a1a;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 24px;
+            background: #111;
+            color: #fff;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .navbar a[aria-current="page"] {
+            background: rgba(255, 255, 255, 0.18);
+        }
+        .navbar-brand {
+            font-weight: 600;
+            margin-right: auto;
+        }
+        main {
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-brand">McBolt Boards</span>
+        <a href="/mcbolt/">Home</a>
+        <a href="/mcbolt/boards/" aria-current="page">Boards</a>
+    </nav>
+    <main>
+        <div id="disqus-boards-host"></div>
+        <script>
+            // Opt into history routing. basePath must include the project
+            // subdirectory because window.location.pathname does too on
+            // GitHub Pages project sites.
+            window.disqus_boards_config = function () {
+                this.routerMode = 'history';
+                this.basePath = '/mcbolt/boards';
+            };
+        </script>
+        <script>
+            (function() {
+                if (document.getElementById('disqus_boards_script')) return;
+                var d = document, s = d.createElement('script');
+                s.id = 'disqus_boards_script';
+                s.src = 'https://boards-mcbolt.disqus.com/boards.js';
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view this widget powered by Disqus.</noscript>
+    </main>
+</body>
+</html>
