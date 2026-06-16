@@ -15,7 +15,7 @@
         // Adapted from https://github.com/rafgraph/spa-github-pages.
         (function () {
             var l = window.location;
-            var FORUMS_PREFIX = '/boards/';
+            var FORUMS_PREFIX = '/mcbolt/boards/';
             if (l.pathname.slice(0, FORUMS_PREFIX.length) !== FORUMS_PREFIX) {
                 return; // unrelated 404, show the static body below
             }
@@ -53,6 +53,6 @@
 </head>
 <body>
     <h1>Page not found</h1>
-    <p><a href="/boards/">Back to home</a></p>
+    <p><a href="/mcbolt/boards/">Back to home</a></p>
 </body>
 </html>
